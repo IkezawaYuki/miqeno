@@ -1,6 +1,6 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import GoogleLogin from "./components/GoogleLogin.vue";
+import GoogleLoginBtn from "./components/GoogleLoginBtn.vue";
 </script>
 
 <template>
@@ -13,7 +13,7 @@ import GoogleLogin from "./components/GoogleLogin.vue";
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
-  <GoogleLogin />
+  <GoogleLoginBtn/>
 </template>
 
 <style scoped>

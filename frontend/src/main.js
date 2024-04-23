@@ -1,15 +1,12 @@
 import { createApp } from 'vue'
-import './style.css'
 import App from './App.vue'
-import GAuth from 'vue3-google-oauth2'
+import "./style.css"
+import vue3GoogleLogin from 'vue3-google-login'
 
+const app = createApp(App)
 
-const app = createApp(App);
-
-const gAuthOptions = {
-    clientId: '970785010398-5aftj1e8nacdaeiqlfm12kj1phe6dumg.apps.googleusercontent.com',
-    prompt: 'consent',
-}
-app.use(GAuth, gAuthOptions)
+app.use(vue3GoogleLogin, {
+    clientId: 'YOUR_GOOGLE_CLIENT_ID'
+})
 
 app.mount('#app')
